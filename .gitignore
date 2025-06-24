@@ -13,7 +13,7 @@ dist-ssr
 *.local
 .env
 .DS_Store
-
+./Backend/.DS_Store
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
