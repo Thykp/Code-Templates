@@ -43,7 +43,7 @@
 - <h5>Hono (In Progress)</h5>
 
 #### Python
-- <h5>Flask (In Progress)</h5>
+- <h5>Flask</h5>
 - <h5>FastAPI</h5>
 
 #### Golang
