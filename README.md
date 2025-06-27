@@ -9,6 +9,19 @@
   This is a collection of code templates, snippets and chunks that helps to expedite the building process as well as act as a reference point to production ready code.
 </p>
 
+## Directory
+```bash
+.
+├── Backend
+│   └── WebServer
+│       ├── Golang_Gin
+│       ├── JavaScript_Express
+│       └── Python_FastAPI
+├── Cloud
+├── DevOps
+└── Frontend
+```
+
 ## Sections
 - Backend
 - Frontend
