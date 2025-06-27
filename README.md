@@ -49,7 +49,7 @@
 
 #### Golang
 - <h5>Gin</h5>
-- <h5>Hertz (In Progress)</h5>
+- <h5>Hertz</h5>
 
 ## Frontend
 
