@@ -1,7 +1,7 @@
 # Coding Templates By Kendrick
 
 <p>
-  I made this to help me have a mini collection of templates that I can reuse and reference and copy paste for projects
+  I made this to help me have a mini collection of templates that I can reuse and reference and copy paste for projects, school projects, hackathons.
 </p>
 
 ## Introduction
