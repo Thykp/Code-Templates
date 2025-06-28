@@ -80,6 +80,7 @@
 ### React
 
 #### ShadCN
+- <h5>React + ShaDCN + Tailwind CSS + TypeScript</h5>
 
 ### Vue
 
