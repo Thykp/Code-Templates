@@ -21,6 +21,12 @@
 │       └── Python_Flask
 ├── Cloud
 ├── DevOps
+│   ├── CICD_Pipelines
+│   │   ├── GitHub_Actions
+│   │   └── GitLab_CICD
+│   └── Docker
+│       ├── DockerCompose_Templates
+│       └── Dockerfile_Templates
 └── Frontend
     ├── React
     │   └── ShadCN
@@ -74,6 +80,22 @@
 #### Java
 - <h5>Spring Boot (In Progress)</h5>
   - Tried and Tested for Enterprise
+
+## DevOps
+
+### CI/CD Pipelines
+
+#### GitHub Actions
+- <h5>Checkov</h5>
+- <h5>Snyk</h5>
+
+#### GitLab CI/CD
+
+### Docker
+
+#### Docker Templates
+- <h5>JavaScript (Node.js)</h5>
+- <h5>Python</h5>
 
 ## Frontend
 
