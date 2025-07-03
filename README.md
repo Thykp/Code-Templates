@@ -23,13 +23,18 @@
 ├── DevOps
 │   ├── CICD_Pipelines
 │   │   ├── GitHub_Actions
+│   │   │   ├── Checkov
+│   │   │   └── Snyk
 │   │   └── GitLab_CICD
 │   └── Docker
 │       ├── DockerCompose_Templates
 │       └── Dockerfile_Templates
+│           ├── Express
+│           └── FastAPI
 └── Frontend
     ├── React
     │   └── ShadCN
+    │       └── frontend
     └── Vue
 ```
 
