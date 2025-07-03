@@ -1,0 +1,48 @@
+name: Snyk Scan
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  snyk:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install deps for order
+        working-directory: backend/services/simple/order
+        run: npm install
+
+      - name: Install deps for frontend
+        working-directory: frontend
+        run: npm install
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Python deps for menu
+        run: pip install -r backend/services/simple/menu/requirements.txt
+
+      - name: Install Python deps for payment
+        run: pip install -r backend/services/simple/payment/requirements.txt
+
+      - name: Install Snyk CLI
+        run: npm install -g snyk
+
+      - name: Authenticate Snyk
+        run: snyk auth ${{ secrets.SNYK_TOKEN }}
+
+      - name: Run Snyk Monitor (with fallback)
+        run: |
+          snyk monitor --all-projects --skip-unresolved || echo "Snyk monitor completed with soft errors"

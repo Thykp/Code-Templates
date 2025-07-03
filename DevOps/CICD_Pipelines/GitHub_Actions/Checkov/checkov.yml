@@ -1,0 +1,22 @@
+name: Checkov IaC Scan
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  checkov:
+    name: Checkov Scan
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run Checkov on Kubernetes manifests
+        uses: bridgecrewio/checkov-action@master
+        with:
+          directory: backend/kubernetes
+          framework: kubernetes
+        continue-on-error: true
